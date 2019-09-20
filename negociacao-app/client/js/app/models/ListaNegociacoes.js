@@ -1,15 +1,15 @@
 class ListaNegociacoes {
     
-    constructor(observer) {
+    constructor(/*observer*/) {
         
         this._negociacoes = [];
-        this._observer = observer;
+        // this._observer = observer;
     }
     
     adiciona(negociacao) {
         
         this._negociacoes.push(negociacao);
-        this._observer(this);
+        // this._observer(this);
         
     }
     
@@ -21,6 +21,6 @@ class ListaNegociacoes {
     esvazia()   {
         
         this._negociacoes = [];
-        this._observer(this);
+        // this._observer(this);
     }
 }
